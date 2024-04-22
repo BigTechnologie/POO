@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="design/default.css">
+    <title>POO</title>
+</head>
+
+<body class="p-3">
+    <h1 class="text-center">POO</h1>
+    <h2 class="text-center">La programmation procédurale:</h2>
+    <p class="bg-primary mx-5 text-white ">
+        Consiste à écrire des procédures ou des fonctions qui effectuent des
+        opérations sur les données.
+    </p>
+
+    <h2 class="text-center">La POO:</h2>
+    <p class="bg-primary mx-5 text-white ">
+        consiste à créer des objets contenant à la fois des données et des fonctions. Exple: une class
+        contenant des fn et des données
+    </p>
+
+    <h2 class="text-center">Avantages de la POO:</h2>
+    <p class="bg-primary mx-5 text-white ">
+        plus rapide et plus facile à exécuter, fournit une structure claire pour les
+        programmes, empeche la repetition ds le code.. <br>
+        La POO permet de créer des applications entièrement réutilisables avec moins de code et un temps de développement plus court, por ce fait on 
+        doit extraire les codes communs à l'application, les placer au même endroit   et les réutiliser au lieu de les répéter.
+    </p>
+
+    <h2 class="text-center">Les class et les objet</h2>
+   
+    <p class="bg-primary mx-5 text-white ">
+        Les classes et les objets sont les deux principaux aspects de la programmation orientée objet.
+    </p>
+
+    <h2 class="text-center">Les class</h2>
+    <p class="bg-primary mx-5 text-white ">
+        Une classe est un modèle pour les objets. Une classe est définie à l'aide du class mot-clé, suivi du nom de 
+        la classe et d'une paire     d'accolades ({}). 
+  
+        Toutes ses propriétés et méthodes se trouvent à l’intérieur des accolades: <br>
+        class Fruit {<br>
+            // Properties<br>
+            public $name;<br>
+            public $color;<br>
+          
+            // Methods <br>
+            function set_name($name) {<br>
+              $this->name = $name;<br>
+            }<br>
+            function get_name() {<br>
+              return $this->name;<br>
+            }<br>
+          }<br>
+    </p>
+
+    <h2 class="text-center">Les objets</h2>
+
+    <p class="bg-secondary mx-5 text-white ">
+        
+            Un objet est une instance de classe. Nous pouvons créer plusieurs objets à partir d'une classe. Chaque objet
+             possède toutes les propriétés        et méthodes définies dans la classe, mais elles auront des valeurs de 
+             propriété différentes. <br>
+            Les objets d'une classe sont créés à l'aide du mot-clé new. <br>
+            Dans l'exemple ci-dessous, $apple et $banana sont des instances(objets) de la classe Fruit : <br>
+            class Fruit { <br>
+                // Properties <br>
+                public $name;<br>
+                public $color;<br>
+              
+                // Methods<br>
+                function set_name($name) {<br>
+                  $this->name = $name;<br>
+                }<br>
+                function get_name() {<br>
+                  return $this->name;<br>
+                }<br>
+              }<br>
+
+              // Les objets <br>
+
+              $apple = new Fruit();<br>
+              $banana = new Fruit();<br>
+              $apple->set_name('Apple');<br>
+              $banana->set_name('Banana');<br>
+              
+              echo $apple->get_name();<br>
+              echo "<br>";
+              echo $banana->get_name();<br>
+    </p>
+
+</body>
+</html>
